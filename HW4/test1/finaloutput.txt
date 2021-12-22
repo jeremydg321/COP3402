@@ -1,0 +1,62 @@
+
+Line	OP	R	L	M
+0	JMP	0	0	1	
+1	INC	0	0	6	
+2	LOD	0	0	5	
+3	LIT	0	0	3	
+4	INC	0	0	2	
+5	STO	0	0	4	
+6	SYS	0	0	3	
+
+				pc	bp	sp	
+Initial Values:			0 	999 	1000
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+				pc	bp	sp
+0 JMP 0 0 1			1 	999 	1000
+Register: 0 0 0 0 0 0 0 0 
+Stack: 
+
+
+
+				pc	bp	sp
+1 INC 0 0 6			2 	999 	994
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 
+
+
+
+				pc	bp	sp
+2 LOD 0 0 5			3 	999 	994
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 
+
+
+
+				pc	bp	sp
+3 LIT 0 0 3			4 	999 	994
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 
+
+
+
+				pc	bp	sp
+4 INC 0 0 2			5 	999 	992
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 0 0 
+
+
+
+				pc	bp	sp
+5 STO 0 0 4			6 	999 	992
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 3 0 0 0 
+
+
+
+				pc	bp	sp
+6 SYS 0 0 3			7 	999 	992
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 3 0 0 0 
+

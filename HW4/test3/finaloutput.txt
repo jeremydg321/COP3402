@@ -1,0 +1,174 @@
+
+Line	OP	R	L	M
+0	JMP	0	0	27	
+1	JMP	0	0	2	
+2	INC	0	0	5	
+3	LOD	0	1	5	
+4	STO	0	0	4	
+5	LOD	0	1	5	
+6	LIT	0	0	3	
+7	INC	0	0	3	
+8	STO	0	1	5	
+9	LOD	0	1	5	
+10	LIT	0	0	3	
+11	RTN	0	0	8	
+12	JPC	0	0	16	
+13	LIT	0	0	3	
+14	STO	0	1	4	
+15	JMP	0	0	16	
+16	LOD	0	1	5	
+17	LIT	0	0	3	
+18	RTN	0	0	12	
+19	JPC	0	0	22	
+20	CAL	0	1	1	
+21	JMP	0	0	22	
+22	LOD	0	1	4	
+23	LOD	0	0	4	
+24	INC	0	0	4	
+25	STO	0	1	4	
+26	RTN	0	0	0	
+27	INC	0	0	6	
+28	LIT	0	0	3	
+29	STO	0	0	5	
+30	CAL	0	0	1	
+31	LOD	0	0	4	
+32	SYS	0	0	1	
+33	SYS	0	0	3	
+
+				pc	bp	sp	
+Initial Values:			0 	999 	1000
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+				pc	bp	sp
+0 JMP 0 0 27			27 	999 	1000
+Register: 0 0 0 0 0 0 0 0 
+Stack: 
+
+
+
+				pc	bp	sp
+27 INC 0 0 6			28 	999 	994
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 
+
+
+
+				pc	bp	sp
+28 LIT 0 0 3			29 	999 	994
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 0 
+
+
+
+				pc	bp	sp
+29 STO 0 0 5			30 	999 	994
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3 
+
+
+
+				pc	bp	sp
+30 CAL 0 0 1			1 	993 	994
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3 
+
+
+
+				pc	bp	sp
+1 JMP 0 0 2			2 	993 	994
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3 
+
+
+
+				pc	bp	sp
+2 INC 0 0 5			3 	993 	989
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 0 
+
+
+
+				pc	bp	sp
+3 LOD 0 1 5			4 	993 	989
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 0 
+
+
+
+				pc	bp	sp
+4 STO 0 0 4			5 	993 	989
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 3 
+
+
+
+				pc	bp	sp
+5 LOD 0 1 5			6 	993 	989
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 3 
+
+
+
+				pc	bp	sp
+6 LIT 0 0 3			7 	993 	989
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 3 
+
+
+
+				pc	bp	sp
+7 INC 0 0 3			8 	993 	986
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 3 0 0 0 
+
+
+
+				pc	bp	sp
+8 STO 0 1 5			9 	993 	986
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 3 0 0 0 
+
+
+
+				pc	bp	sp
+9 LOD 0 1 5			10 	993 	986
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 3 0 0 0 
+
+
+
+				pc	bp	sp
+10 LIT 0 0 3			11 	993 	986
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3  |999 999 31 0 3 0 0 0 
+
+
+
+				pc	bp	sp
+11 RTN 0 0 8			31 	999 	994
+Register: 3 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3 
+
+
+
+				pc	bp	sp
+31 LOD 0 0 4			32 	999 	994
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3 
+
+0
+
+
+				pc	bp	sp
+32 SYS 0 0 1			33 	999 	994
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3 
+
+
+
+				pc	bp	sp
+33 SYS 0 0 3			34 	999 	994
+Register: 0 0 0 0 0 0 0 0 
+Stack: 0 0 0 0 0 3 
+
